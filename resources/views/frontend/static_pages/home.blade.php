@@ -197,7 +197,7 @@ a.h2{
       </ul>
     </div>
 
-<div class="mb-4 mt-5"><a href="our-story.php" class="btn-services">Get to Know Us</a></div>
+    <div class="mb-4 mt-5"><a href="our-story.php" class="btn-services">Get to Know Us</a></div>
 
 
     </div>
@@ -235,7 +235,7 @@ a.h2{
           </li>
           <li aria-haspopup="true"><a href="{{ route('home') }}" class="menuhomeicon"><i class="fas fa-home"></i><span class="hometext">
                 HOME</span></a></li>
-          <li><a href="{{ route('about') }}" class="menuhomeicon">ABOUT</a></li>
+          <li><a href="{{ route('abouts') }}" class="menuhomeicon">ABOUT</a></li>
 
           <li aria-haspopup="true"><span class="wsmenu-click"><i class="wsmenu-arrow"></i></span><a href="/products.php">PRODUCTS <span class="wsarrow"></span></a>
             <div class="wsmegamenu clearfix">
@@ -308,7 +308,7 @@ a.h2{
     </div>
   </div>
 
-  </header>
+</header>
 
 
 
