@@ -37,7 +37,7 @@
                    </a>
                  </li>
 
-                 <li class="list-inline-item">
+                 {{-- <li class="list-inline-item">
                    <a href="https://manufacturermedicalsupplies.blogspot.com/" title="Blog" target="_blank">
                    <i id="social-b" class="fab fa-blogger fa-2x"></i>
                    </a>
@@ -46,9 +46,9 @@
 
                  <li class="list-inline-item">
                   <a href="/web-stories/" title="Web Stoires" target="_blank">
-                 <img id="social-ws" src="{{ asset('public/frontend/images/web-stories-icon.png') }}" alt="Products Web Stories" />
+                    <img id="social-ws" src="{{ asset('public/frontend/images/web-stories-icon.png') }}" alt="Products Web Stories" />
                    </a>
-                 </li>
+                 </li> --}}
                </ul>
            </div>
 

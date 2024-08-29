@@ -44,12 +44,9 @@
                             placeholder="What'sapp Number"
                             @if ( !empty( $basicInfo ) )
                                value="{{ $basicInfo->whatsapp }}"
-                            @endif
-                            >
+                            @endif>
                     </div>
-                </div>
 
-                <div class="row">
                     <div class="col mb-3">
                         <label for="phone" class="form-label">Phone</label>
                         <input type="text" class="form-control" id="phone" name="phone"
@@ -57,8 +54,7 @@
                             @if ( !empty( $basicInfo ) )
                                value="{{ $basicInfo->phone }}"
                             @endif
-                            required
-                        >
+                            required>
                     </div>
 
                     <div class="col mb-3">
@@ -67,8 +63,7 @@
                             @if ( !empty( $basicInfo ) )
                                value="{{ $basicInfo->phone_optional }}"
                             @endif
-                            placeholder="Write Phone ( Optional )"
-                            >
+                            placeholder="Write Phone ( Optional )">
                     </div>
                 </div>
 
@@ -79,8 +74,7 @@
                             @if ( !empty( $basicInfo ) )
                                 value="{{ $basicInfo->email }}"
                             @endif
-                            placeholder="Write Email Address"
-                            required>
+                            placeholder="Write Email Address" required >
                     </div>
 
                     <div class="col mb-3">
@@ -91,9 +85,7 @@
                             @endif
                             placeholder="Write Email Address ( Optional )">
                     </div>
-                </div>
 
-                <div class="row">
                     <div class="col mb-3">
                         <label for="facebook" class="form-label">Facebook</label>
                         <input type="text" class="form-control" id="facebook" name="facebook"
@@ -131,9 +123,7 @@
                             @endif
                             placeholder="Pinterest Link Here....">
                     </div>
-                </div>
 
-                <div class="row">
                     <div class="col mb-3">
                         <label for="instagram" class="form-label">Instagram</label>
                         <input type="text" class="form-control" id="instagram" name="instagram"
@@ -153,24 +143,54 @@
                     </div>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label" for="facebook_pixel">Facebook Pixel</label>
-                    <textarea id="facebook_pixel" class="form-control" name="facebook_pixel" placeholder="Facebook Pixel Code Here......">@if ( !empty( $basicInfo ) ){{ $basicInfo->facebook_pixel }} @endif</textarea>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="experience" class="form-label">Years Of Experience</label>
+                        <input type="number" class="form-control" id="experience" name="experience"
+                            @if ( !empty( $basicInfo ) )
+                                value="{{ $basicInfo->experience }}"
+                            @endif
+                            placeholder="Write Here....">
+                    </div>
+
+                    <div class="col mb-3">
+                        <label for="medical_product" class="form-label">Medical Product</label>
+                        <input type="number" class="form-control" id="medical_product" name="medical_product"
+                            @if ( !empty( $basicInfo ) )
+                                value="{{ $basicInfo->medical_product }}"
+                            @endif
+                            placeholder="Write Here....">
+                    </div>
+
+                    <div class="col mb-3">
+                        <label for="client_satisfy" class="form-label">Client Satisfy</label>
+                        <input type="number" class="form-control" id="client_satisfy" name="client_satisfy"
+                            @if ( !empty( $basicInfo ) )
+                                value="{{ $basicInfo->client_satisfy }}"
+                            @endif
+                            placeholder="Write Here....">
+                    </div>
+
+                    <div class="col mb-3">
+                        <label for="country_product" class="form-label">Country Product<</label>
+                        <input type="number" class="form-control" id="country_product" name="country_product"
+                            @if ( !empty( $basicInfo ) )
+                                value="{{ $basicInfo->country_product }}"
+                            @endif
+                            placeholder="Write Here....">
+                    </div>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label" for="google_analytics">Google Analytics</label>
-                    <textarea id="google_analytics" class="form-control" name="google_analytics" placeholder="Google Analytics Code Here......">@if ( !empty( $basicInfo ) ){{ $basicInfo->google_analytics }}@endif</textarea>
-                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label class="form-label" for="address">Address</label>
+                        <textarea id="address" class="form-control" name="address" placeholder="Write Address" required>@if( !empty( $basicInfo ) ){{ $basicInfo->address }}@endif</textarea>
+                     </div>
 
-                <div class="mb-3">
-                  <label class="form-label" for="address">Address</label>
-                  <textarea id="address" class="form-control" name="address" placeholder="Write Address" required>@if( !empty( $basicInfo ) ){{ $basicInfo->address }}@endif</textarea>
-                </div>
-
-                <div class="mb-3">
-                  <label class="form-label" for="address_optional">Address ( Optional )</label>
-                  <textarea id="address_optional" class="form-control" name="address_optional" placeholder="Write Address ( Optional )">@if ( !empty( $basicInfo ) ){{ $basicInfo->address_optional }}@endif</textarea>
+                     <div class="col mb-3">
+                       <label class="form-label" for="address_optional">Address ( Optional )</label>
+                       <textarea id="address_optional" class="form-control" name="address_optional" placeholder="Write Address ( Optional )">@if ( !empty( $basicInfo ) ){{ $basicInfo->address_optional }}@endif</textarea>
+                     </div>
                 </div>
 
                 @if ( !empty( $basicInfo ) )

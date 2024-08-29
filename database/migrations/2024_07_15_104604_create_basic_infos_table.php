@@ -27,8 +27,10 @@ return new class extends Migration
             $table->text('linkedin')->nullable();
             $table->text('instagram')->nullable();
             $table->text('pinterest')->nullable();
-            $table->text('facebook_pixel')->nullable();
-            $table->text('google_analytics')->nullable();
+            $table->text('experience')->nullable();
+            $table->text('medical_product')->nullable();
+            $table->text('client_satisfy')->nullable();
+            $table->text('country_product')->nullable();
             $table->timestamps();
         });
     }
