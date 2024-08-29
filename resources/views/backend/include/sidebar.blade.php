@@ -144,6 +144,23 @@
       </li>
 
 
+      <!--  Testimonial Section  -->
+      <li class="menu-item">
+        <a href="javascript:void(0);" class="menu-link menu-toggle">
+          <i class="menu-icon tf-icons bx bxs-user-badge"></i>
+          <div data-i18n="Layouts">Meet Us</div>
+        </a>
+
+        <ul class="menu-sub">
+          <li class="menu-item">
+            <a href="{{ route('admin.meet-us.index') }}" class="menu-link">
+              <div data-i18n="Without menu">Manage Meet Us</div>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+
       <!--  Contact Section  -->
       <li class="menu-item">
         <a href="javascript:void(0);" class="menu-link menu-toggle">

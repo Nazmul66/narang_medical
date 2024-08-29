@@ -12,6 +12,7 @@ use App\Http\Controllers\Backend\BasicInfoController;
 use App\Http\Controllers\Backend\ProfessionalController;
 use App\Http\Controllers\Backend\ServiceInfoController;
 use App\Http\Controllers\Backend\TestimonialController;
+use App\Http\Controllers\Backend\MeetUsController;
 
 
 // Route::view('/admin/login', 'backend.pages.login.index');
@@ -43,6 +44,12 @@ Route::group(['prefix' => 'admin'], function(){
     Route::resource('testimonial', TestimonialController::class)->names('admin.testimonial');
     Route::get('/get-testimonial',[TestimonialController::class,'getData'])->name('admin.get-testimonial');
     Route::post('/testimonial/status',[TestimonialController::class,'adminTestimonialStatus'])->name('admin.testimonial.status');
+
+
+    //____  MeetUs  ____//
+    Route::resource('meet-us', MeetUsController::class)->names('admin.meet-us');
+    Route::get('/get-meet-us',[MeetUsController::class,'getData'])->name('admin.get-meet-us');
+    Route::post('/meet-us/status',[MeetUsController::class,'adminMeetUsStatus'])->name('admin.meet-us.status');
 
 
     //____  Service Info  ____//

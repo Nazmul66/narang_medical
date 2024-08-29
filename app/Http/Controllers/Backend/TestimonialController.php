@@ -93,7 +93,6 @@ class TestimonialController extends Controller
     public function edit(string $id)
     {
         $testimonial = Testimonial::find($id);
-        // dd($testimonial);
         return response()->json(['success' => $testimonial]);
     }
 
