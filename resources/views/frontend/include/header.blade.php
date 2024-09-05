@@ -32,7 +32,14 @@
                 <div class="container-fluid">
                   <div class="row">
 
-                    <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
+                      @foreach ($productCategories as $productCategory)
+                          <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
+                              <li><a href="{{ route('product.details', $productCategory->slug) }}">{{ $productCategory->title }}</a></li>
+                          </ul>
+                      @endforeach
+
+
+                    {{-- <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
                       <li><a href="/hospital-medical-furniture/index.php">Hospital Medical Furniture</a></li>
                       <li><a href="/orthopedic-implants-manufacturers-india/index.php">Orthopaedic Implants</a></li>
                       <li><a href="/medical-disposables/index.php">Medical Disposables</a></li>
@@ -40,9 +47,10 @@
                       <li><a href="/anaesthesia-equipments-products/index.php">Anaesthesia Products</a></li>
                       <li><a href="/autoclave-sterilizers/index.php">Autoclave &amp; Sterilizers</a></li>
                       <li><a href="/laboratory-products/index.php">Laboratory Products</a></li>
-                    </ul>
+                    </ul> --}}
 
-                    <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
+
+                    {{-- <ul class="col-lg-3 col-md-12 col-xs-12 link-list">
                       <li><a href="/height-weight-scales/index.php">Height &amp; Weight Scales</a></li>
                       <li><a href="/ob-gyn-gynecological-products/index.php">OB GYN Products</a></li>
                       <li><a href="/operation-theatre-lights/index.php">OT &amp; Examination lights</a></li>
@@ -70,7 +78,7 @@
                       <li><a href="/icu-equipments/index.php">ICU Equipment</a></li>
                       <li><a href="/ot-equipments/index.php">OT Equipment</a></li>
                       <li><a href="/emergency-medical-products-supplies/covid-19/index.php">Covid - 19 Products</a></li>
-                    </ul>
+                    </ul> --}}
                   </div>
                 </div>
               </div>

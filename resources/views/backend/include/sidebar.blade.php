@@ -127,6 +127,32 @@
         </ul>
       </li>
 
+        <!--  Product Section  -->
+        <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons bx bxs-user-badge"></i>
+                <div data-i18n="Layouts">Product</div>
+            </a>
+
+            <ul class="menu-sub">
+                <li class="menu-item">
+                    <a href="{{ route('admin.product-category.index') }}" class="menu-link">
+                        <div data-i18n="Without menu">Product Category</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="{{ route('admin.product-subCategory.index') }}" class="menu-link">
+                        <div data-i18n="Without menu">Manage Product</div>
+                    </a>
+                </li>
+                {{-- <li class="menu-item">
+                    <a href="{{ route('admin.meet-us.index') }}" class="menu-link">
+                        <div data-i18n="Without menu">Manage Product</div>
+                    </a>
+                </li> --}}
+            </ul>
+        </li>
+
       <!--  Testimonial Section  -->
       <li class="menu-item">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -143,8 +169,7 @@
         </ul>
       </li>
 
-
-      <!--  Testimonial Section  -->
+      <!--  Meet Us Section  -->
       <li class="menu-item">
         <a href="javascript:void(0);" class="menu-link menu-toggle">
           <i class="menu-icon tf-icons bx bxs-user-badge"></i>

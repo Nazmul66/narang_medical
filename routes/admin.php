@@ -13,6 +13,8 @@ use App\Http\Controllers\Backend\ProfessionalController;
 use App\Http\Controllers\Backend\ServiceInfoController;
 use App\Http\Controllers\Backend\TestimonialController;
 use App\Http\Controllers\Backend\MeetUsController;
+use App\Http\Controllers\Backend\ProductCategoryController;
+use App\Http\Controllers\Backend\ProductSubCategoryController;
 
 
 // Route::view('/admin/login', 'backend.pages.login.index');
@@ -32,6 +34,19 @@ Route::group(['prefix' => 'admin'], function(){
     Route::resource('review', ReviewController::class)->names('admin.review');
     Route::get('/get-review',[ReviewController::class,'getData'])->name('admin.get-review');
     Route::post('/review/status',[ReviewController::class,'adminReviewStatus'])->name('admin.review.status');
+
+
+    //____  Product-Category  ____//
+    Route::resource('product-category', ProductCategoryController::class)->names('admin.product-category');
+    Route::get('/get-product-category',[ProductCategoryController::class,'getData'])->name('admin.get-product-category');
+    Route::post('/product-category/status',[ProductCategoryController::class,'adminProductCategoryStatus'])->name('admin.product-category.status');
+
+
+    //____  Product-SubCategory  ____//
+    Route::resource('product-subCategory', ProductSubCategoryController::class)->names('admin.product-subCategory');
+    Route::get('/product-subCategory/{id}',[ProductSubCategoryController::class,'singleProductSubCategory'])->name('single.admin.product-subCategory');
+    Route::get('/get-product-subCategory',[ProductSubCategoryController::class,'getData'])->name('admin.get-product-subCategory');
+    Route::post('/product-subCategory/status',[ProductSubCategoryController::class,'adminProductSubCategoryStatus'])->name('admin.product-subCategory.status');
 
 
     //____  Contact  ____//
@@ -75,7 +90,5 @@ Route::group(['prefix' => 'admin'], function(){
 
     //____ About  ____//
     Route::resource('about', AboutController::class)->names('admin.about');
-
-
 });
 

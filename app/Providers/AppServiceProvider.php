@@ -14,6 +14,7 @@ use App\models\Safety;
 use App\models\Logo;
 use App\models\Review;
 use App\models\BasicInfo;
+use App\models\ProductCategory;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -36,6 +37,7 @@ class AppServiceProvider extends ServiceProvider
             $banner = Banner::getData();
             $professional = Professional::getData();
             $basicInfo = BasicInfo::getData();
+            $productCategories = ProductCategory::where('status', 1)->get();
 
 
             $view->with([
@@ -43,6 +45,7 @@ class AppServiceProvider extends ServiceProvider
                 'about' => $about,
                 'professional' => $professional,
                 'basicInfo' => $basicInfo,
+                'productCategories' => $productCategories,
             ]);
         });
 
