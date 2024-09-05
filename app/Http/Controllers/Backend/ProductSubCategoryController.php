@@ -32,16 +32,16 @@ class ProductSubCategoryController extends Controller
 
         return DataTables::of($productSubCategories)
              ->addIndexColumn()
-             ->addColumn('cat_title', function ($productSubCategory) {
+             ->editColumn('cat_title', function ($productSubCategory) {
                 return '<span class="badge bg-label-primary cursor-pointer" id="status">'. $productSubCategory->cat_title .'</span>';
              })
-             ->addColumn('subCat_title', function ($productSubCategory) {
+             ->editColumn('subCat_title', function ($productSubCategory) {
                 return '<span class="badge bg-label-secondary cursor-pointer" id="status">'. $productSubCategory->title .'</span>';
              })
-             ->addColumn('main_img', function ($productSubCategory) {
+             ->editColumn('main_img', function ($productSubCategory) {
                 return '<img src="'. asset($productSubCategory->main_img) .'" alt="" style="width: 65px;">';
              })
-             ->addColumn('banner_img', function ($productSubCategory) {
+             ->editColumn('banner_img', function ($productSubCategory) {
                 return '<img src="'. asset($productSubCategory->banner_img) .'" alt="" style="width: 65px;">';
              })
              ->addColumn('status', function ($productSubCategory) {

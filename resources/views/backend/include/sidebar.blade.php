@@ -142,14 +142,14 @@
                 </li>
                 <li class="menu-item">
                     <a href="{{ route('admin.product-subCategory.index') }}" class="menu-link">
-                        <div data-i18n="Without menu">Manage Product</div>
+                        <div data-i18n="Without menu">Product SubCategory</div>
                     </a>
                 </li>
-                {{-- <li class="menu-item">
-                    <a href="{{ route('admin.meet-us.index') }}" class="menu-link">
-                        <div data-i18n="Without menu">Manage Product</div>
+                <li class="menu-item">
+                    <a href="{{ route('admin.product-childCategory.index') }}" class="menu-link">
+                        <div data-i18n="Without menu">Product ChildCategory</div>
                     </a>
-                </li> --}}
+                </li>
             </ul>
         </li>
 
