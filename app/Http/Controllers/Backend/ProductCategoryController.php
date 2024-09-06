@@ -27,7 +27,7 @@ class ProductCategoryController extends Controller
         return DataTables::of($productCategories)
              ->addIndexColumn()
              ->addColumn('main_img', function ($productCategory) {
-                return '<img src="'. asset($productCategory->banner_img) .'" alt="" style="width: 65px;">';
+                return '<img src="'. asset($productCategory->main_img) .'" alt="" style="width: 65px;">';
              })
              ->addColumn('banner_img', function ($productCategory) {
                 return '<img src="'. asset($productCategory->banner_img) .'" alt="" style="width: 65px;">';
@@ -65,6 +65,7 @@ class ProductCategoryController extends Controller
         $productCategory = new ProductCategory();
 
         $productCategory->title                       = $request->title;
+        $productCategory->sub_title                   = $request->sub_title;
         $productCategory->slug                        = Str::slug($request->title);
         $productCategory->youtube_url                 = $request->youtube_url;
         $productCategory->description                 = $request->description;
@@ -134,6 +135,7 @@ class ProductCategoryController extends Controller
         $productCategory = ProductCategory::find($id);
 
         $productCategory->title                       = $request->title;
+        $productCategory->sub_title                   = $request->sub_title;
         $productCategory->slug                        = Str::slug($request->title);
         $productCategory->youtube_url                 = $request->youtube_url;
         $productCategory->description                 = $request->description;

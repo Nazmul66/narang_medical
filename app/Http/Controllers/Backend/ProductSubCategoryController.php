@@ -77,6 +77,7 @@ class ProductSubCategoryController extends Controller
         $productSubCategory = new ProductSubCategory();
 
         $productSubCategory->title                       = $request->title;
+        $productSubCategory->sub_title                   = $request->sub_title;
         $productSubCategory->category_id                 = $request->category_id;
         $productSubCategory->slug                        = Str::slug($request->title);
         $productSubCategory->youtube_url                 = $request->youtube_url;
@@ -147,6 +148,7 @@ class ProductSubCategoryController extends Controller
         $productSubCategory = ProductSubCategory::find($id);
 
         $productSubCategory->title                       = $request->title;
+        $productSubCategory->sub_title                   = $request->sub_title;
         $productSubCategory->category_id                 = $request->category_id;
         $productSubCategory->slug                        = Str::slug($request->title);
         $productSubCategory->youtube_url                 = $request->youtube_url;

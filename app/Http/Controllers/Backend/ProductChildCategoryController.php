@@ -26,10 +26,10 @@ class ProductChildCategoryController extends Controller
     public function getData(Request $request)
     {
         $productChildCategories = DB::table('product_child_categories')
-                            ->join('product_categories', 'product_categories.id', 'product_child_categories.category_id')
-                            ->join('product_sub_categories', 'product_sub_categories.id', 'product_child_categories.subCategory_id')
-                            ->select('product_sub_categories.*', 'product_child_categories.*', 'product_categories.title as cat_title', 'product_sub_categories.title as subCat_title')
-                            ->get();
+                    ->join('product_categories', 'product_categories.id', 'product_child_categories.category_id')
+                    ->join('product_sub_categories', 'product_sub_categories.id', 'product_child_categories.subCategory_id')
+                    ->select('product_sub_categories.*', 'product_child_categories.*', 'product_categories.title as cat_title', 'product_sub_categories.title as subCat_title')
+                    ->get();
         // dd($categories);
 
         return DataTables::of($productChildCategories)
@@ -45,9 +45,6 @@ class ProductChildCategoryController extends Controller
              })
              ->editColumn('main_img', function ($productChildCategory) {
                 return '<img src="'. asset($productChildCategory->main_img) .'" alt="" style="width: 65px;">';
-             })
-             ->editColumn('banner_img', function ($productChildCategory) {
-                return '<img src="'. asset($productChildCategory->banner_img) .'" alt="" style="width: 65px;">';
              })
              ->addColumn('status', function ($productChildCategory) {
                 if ($productChildCategory->status == 1) {
@@ -68,7 +65,7 @@ class ProductChildCategoryController extends Controller
                 </div>';
             })
 
-            ->rawColumns(['cat_title', 'subCat_title', 'childCat_title', 'main_img', 'banner_img', 'status', 'action'])
+            ->rawColumns(['cat_title', 'subCat_title', 'childCat_title', 'main_img', 'status', 'action'])
             ->make(true);
     }
 
@@ -85,7 +82,6 @@ class ProductChildCategoryController extends Controller
         $productChildCategory->category_id                 = $request->category_id;
         $productChildCategory->subCategory_id              = $request->subCategory_id;
         $productChildCategory->slug                        = Str::slug($request->title);
-        $productChildCategory->youtube_url                 = $request->youtube_url;
         $productChildCategory->description                 = $request->description;
         $productChildCategory->status                      = $request->status;
 
@@ -97,16 +93,6 @@ class ProductChildCategoryController extends Controller
             $main_img->move($imagePath, $imageName);
 
             $productChildCategory->main_img   = $imagePath . $imageName;
-        }
-
-        if( $request->file('banner_img') ){
-            $banner_img = $request->file('banner_img');
-
-            $imageName          = microtime('.') . '.' . $banner_img->getClientOriginalExtension();
-            $imagePath          = 'public/backend/image/product-childCategory/';
-            $banner_img->move($imagePath, $imageName);
-
-            $productChildCategory->banner_img   = $imagePath . $imageName;
         }
 
         $productChildCategory->save();
@@ -156,7 +142,6 @@ class ProductChildCategoryController extends Controller
         $productChildCategory->category_id                 = $request->category_id;
         $productChildCategory->subCategory_id              = $request->subCategory_id;
         $productChildCategory->slug                        = Str::slug($request->title);
-        $productChildCategory->youtube_url                 = $request->youtube_url;
         $productChildCategory->description                 = $request->description;
         $productChildCategory->status                      = $request->status;
 
@@ -174,20 +159,6 @@ class ProductChildCategoryController extends Controller
             $productChildCategory->main_img   = $imagePath . $imageName;
         }
 
-        if( $request->file('banner_img') ){
-            $banner_img = $request->file('banner_img');
-
-            if( !is_null($productChildCategory->banner_img) && file_exists($productChildCategory->banner_img) ){
-                unlink($productChildCategory->banner_img);
-             }
-
-            $imageName          = microtime('.') . '.' . $banner_img->getClientOriginalExtension();
-            $imagePath          = 'public/backend/image/product-childCategory/';
-            $banner_img->move($imagePath, $imageName);
-
-            $productChildCategory->banner_img   = $imagePath . $imageName;
-        }
-
         $productChildCategory->save();
 
         return response()->json(['message'=> "success"], 200);
@@ -203,12 +174,6 @@ class ProductChildCategoryController extends Controller
         if ( !is_null($productSubCategory->main_img) ) {
             if (file_exists($productSubCategory->main_img)) {
                 unlink($productSubCategory->main_img);
-            }
-        }
-
-        if ( !is_null($productSubCategory->banner_img) ) {
-            if (file_exists($productSubCategory->banner_img)) {
-                unlink($productSubCategory->banner_img);
             }
         }
 

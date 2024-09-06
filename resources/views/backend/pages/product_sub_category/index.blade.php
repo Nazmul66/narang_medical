@@ -77,6 +77,11 @@
                             </div>
                         </div>
 
+                        <div class="col mb-3">
+                            <label for="sub_title" class="form-label">Product Category Sub Title</label>
+                            <input type="text" id="sub_title" name="sub_title" class="form-control" placeholder="Product Category Sub Title">
+                        </div>
+
                         <div class="row">
                             <div class="col mb-3">
                                 <label for="main_img" class="form-label">Main Image</label>
@@ -154,6 +159,11 @@
                                 @endforeach
                             </select>
                         </div>
+                    </div>
+
+                    <div class="col mb-3">
+                        <label for="up_sub_title" class="form-label">Product Category Sub Title</label>
+                        <input type="text" id="up_sub_title" name="sub_title" class="form-control" placeholder="Product Category Sub Title">
                     </div>
 
                     <div class="row">
@@ -367,6 +377,7 @@
 
                     $('#up_id').val(data.id);
                     $('#up_title').val(data.title);
+                    $('#up_sub_title').val(data.sub_title);
                     $('#up_category_id').val(data.category_id);
                     $('#up_youtube_url').val(data.youtube_url);
                     $('#up_description').val(data.description);

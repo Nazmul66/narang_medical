@@ -14,11 +14,12 @@ return new class extends Migration
         Schema::create('product_categories', function (Blueprint $table) {
             $table->id();
             $table->string('title');
+            $table->string('sub_title');
             $table->text('main_img');
             $table->text('banner_img');
             $table->string('slug')->unique();
-            $table->text('description');
-            $table->text('youtube_url');
+            $table->text('description')->nullable();
+            $table->text('youtube_url')->nullable();
             $table->integer('status')->default(1)->comment('1=active, 0=inactive');
             $table->timestamps();
         });

@@ -65,9 +65,14 @@
                             </div>
 
                             <div class="col mb-3">
-                                <label for="youtube_url" class="form-label">Youtube Url</label>
-                                <input class="form-control" type="text" name="youtube_url" id="youtube_url">
+                                <label for="sub_title" class="form-label">Product Category Sub Title</label>
+                                <input class="form-control" type="text" name="sub_title" id="sub_title">
                             </div>
+                        </div>
+
+                        <div class="col mb-3">
+                            <label for="youtube_url" class="form-label">Youtube Url</label>
+                            <input class="form-control" type="text" name="youtube_url" id="youtube_url">
                         </div>
 
                         <div class="row">
@@ -132,9 +137,14 @@
                         </div>
 
                         <div class="col mb-3">
-                            <label for="up_youtube_url" class="form-label">Youtube Url</label>
-                            <input class="form-control" type="text" name="youtube_url" id="up_youtube_url">
+                            <label for="up_sub_title" class="form-label">Product Category Sub Title</label>
+                            <input class="form-control" type="text" name="sub_title" id="up_sub_title">
                         </div>
+                    </div>
+
+                    <div class="col mb-3">
+                        <label for="up_youtube_url" class="form-label">Youtube Url</label>
+                        <input class="form-control" type="text" name="youtube_url" id="up_youtube_url">
                     </div>
 
                     <div class="row">
@@ -338,6 +348,7 @@
 
                     $('#up_id').val(data.id);
                     $('#up_title').val(data.title);
+                    $('#up_sub_title').val(data.sub_title);
                     $('#up_youtube_url').val(data.youtube_url);
                     $('#up_description').val(data.description);
                     $('#up_status').val(data.status);

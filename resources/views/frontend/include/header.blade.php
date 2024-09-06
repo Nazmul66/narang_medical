@@ -88,14 +88,12 @@
             <li><a href="{{ route('price') }}" class="menuhomeicon">PRICING</a></li>
 
 
-
             <li aria-haspopup="true"><span class="wsmenu-click"><i class="wsmenu-arrow"></i></span><a href="#">CONTACT <span class="wsarrow"></span></a>
               <ul class="sub-menu">
-                <li aria-haspopup="true"><a href="/distributorship-enquiry-form.php">Become Our Distributor </a></li>
-                <li aria-haspopup="true"><a href="/purchase-enquiry-form.php">Purchase Enquiry</a></li>
-                <li aria-haspopup="true"><a href="/contact.php">Our Address</a></li>
+                <li aria-haspopup="true"><a href="{{ route('distributor') }}">Become Our Distributor </a></li>
+                <li aria-haspopup="true"><a href="{{ route('purchase.enquiry') }}">Purchase Enquiry</a></li>
+                <li aria-haspopup="true"><a href="{{ route('address') }}">Our Address</a></li>
                 <li aria-haspopup="true"><a href="{{ route('feedback') }}">Feedback</a></li>
-
               </ul>
             </li>
 

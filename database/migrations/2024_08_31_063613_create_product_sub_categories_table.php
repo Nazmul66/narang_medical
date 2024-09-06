@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('category_id');
             $table->string('title');
+            $table->string('sub_title');
             $table->text('main_img');
             $table->text('banner_img');
             $table->string('slug')->unique();
