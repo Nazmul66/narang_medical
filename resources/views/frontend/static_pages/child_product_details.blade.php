@@ -21,7 +21,7 @@
            <div class="col-md-9 col-12">
                 <div class="breadcrumbs_patha">
                     <a href="{{ url('/') }}">Home</a>
-                    <a href="{{ url('/') }}">Products</a>
+                    {{-- <a href="{{ url('/') }}">Products</a> --}}
                     <a href="{{ route('sub-product.details', $productSubCategory->cat_slug) }}">{{ $productSubCategory->cat_titles }}</a>
                     {{ $productSubCategory->slug }}
                 </div>
@@ -95,7 +95,7 @@
 <!--===============================
 Categories Slider Scrollbar Section
 =================================-->
-{{-- 
+{{--
 <section class="pt-80">
 <div class="container">
 

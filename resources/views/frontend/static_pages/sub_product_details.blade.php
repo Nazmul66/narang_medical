@@ -28,7 +28,7 @@
             <div class="col-7 col-sm-8">
                 <div class="breadcrumbs_path-test">
                     <a href="{{ url('/') }}"><i class="fas fa-home"></i></a>
-                    <a href="{{ url('/') }}">Products</a> {{ $productCategory->title }}
+                    <a type="button">{{ $productCategory->title }}</a>
                 </div>
 
                 <div class="breadcrumbs_path-test-m">

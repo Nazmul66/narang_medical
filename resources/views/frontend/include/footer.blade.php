@@ -4,150 +4,102 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4 footers-one">
-                 <h5>Narang Medical Limited</h5>
+                 <h5>{{ env('APP_NAME') }}</h5>
                  <hr class="bottom-line-left">
-                 <p> Narang Tower, 46 Community Centre, Naraina Ph-I, New Delhi - 110028, India.</p>
-                 <p>Call us: +91-11-45554000</p>
-                 <p>Mail Us: <a href="mailto:NET@narang.com">NET@narang.com</a></p>
-             <div class="social-icons">
-               <ul class="list-inline">
-                 <li class="list-inline-item">
-                   <a href="https://twitter.com/narangmedical" title="Twitter" target="_blank">
-                     <img id="social-tw" src="{{ asset('public/frontend/images/twitter-icon.png') }}" alt="Twitter X" />
-        <!--                  <i id="social-tw" class="fab fa-twitter fa-2x"></i>-->
-                   </a>
-                 </li>
+                 <p>{{ $basicInfo->address }}</p>
+                 <p>Mail Us: <a href="mailto:{{ $basicInfo->email }}">{{ $basicInfo->email }}</a></p>
+                <div class="social-icons">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                        <a href="{{ $basicInfo->twitter }}" title="Twitter" target="_blank">
+                            <img id="social-tw" src="{{ asset('public/frontend/images/twitter-icon.png') }}" alt="Twitter X" />
+                                <!--    <i id="social-tw" class="fab fa-twitter fa-2x"></i>-->
+                        </a>
+                        </li>
 
-                   <li class="list-inline-item">
-                   <a href="https://www.facebook.com/narangmedical" title="Facebook" target="_blank">
-                   <i id="social-fb" class="fab fa-facebook fa-2x"></i>
-                   </a>
-                 </li>
-
-
-                 <li class="list-inline-item">
-                   <a href="https://www.instagram.com/narangmedical/" title="Instagram" target="_blank">
-                   <i id="social-insta" class="fab fa-instagram fa-2x"></i>
-                   </a>
-                 </li>
-
-                   <li class="list-inline-item">
-                   <a href="https://www.youtube.com/user/narangmedical" title="Youtube" target="_blank">
-                   <i id="social-yt" class="fab fa-youtube fa-2x"></i>
-                   </a>
-                 </li>
-
-                 {{-- <li class="list-inline-item">
-                   <a href="https://manufacturermedicalsupplies.blogspot.com/" title="Blog" target="_blank">
-                   <i id="social-b" class="fab fa-blogger fa-2x"></i>
-                   </a>
-                 </li>
+                        <li class="list-inline-item">
+                        <a href="{{ $basicInfo->facebook }}" title="Facebook" target="_blank">
+                        <i id="social-fb" class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        </li>
 
 
-                 <li class="list-inline-item">
-                  <a href="/web-stories/" title="Web Stoires" target="_blank">
-                    <img id="social-ws" src="{{ asset('public/frontend/images/web-stories-icon.png') }}" alt="Products Web Stories" />
-                   </a>
-                 </li> --}}
-               </ul>
-           </div>
+                        <li class="list-inline-item">
+                        <a href="{{ $basicInfo->instagram }}" title="Instagram" target="_blank">
+                        <i id="social-insta" class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        </li>
+
+                        <li class="list-inline-item">
+                        <a href="{{ $basicInfo->youtube }}" title="Youtube" target="_blank">
+                        <i id="social-yt" class="fab fa-youtube fa-2x"></i>
+                        </a>
+                        </li>
+
+                        {{-- <li class="list-inline-item">
+                        <a href="https://manufacturermedicalsupplies.blogspot.com/" title="Blog" target="_blank">
+                        <i id="social-b" class="fab fa-blogger fa-2x"></i>
+                        </a>
+                        </li>
 
 
-         <div class="mb-3">
-         <div id="google_translate_element"></div>
-         <script type="text/javascript">
-         function googleTranslateElementInit() {
-         new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-         }
-         </script>
-         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-         </div>
+                        <li class="list-inline-item">
+                        <a href="/web-stories/" title="Web Stoires" target="_blank">
+                            <img id="social-ws" src="{{ asset('public/frontend/images/web-stories-icon.png') }}" alt="Products Web Stories" />
+                        </a>
+                        </li> --}}
+                    </ul>
+                </div>
 
+                <div class="mb-3">
+                   <div id="google_translate_element"></div>
+                    <script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                        }
+                    </script>
 
-         </div>
-          <div class="col-xs-12 col-sm-6 col-md-2 footers-two">
-             <p class="h5">Certificates</p>
-             <hr class="bottom-line-left">
-             <ul class="list-unstyled">
-            <li><a href="/quality.php">ISO : 9001-2015</a></li>
-            <li><a href="/quality.php">ISO : 13485-2016</a></li>
-            <li><a href="/certificates/ce.php">CE Certificates</a></li>
-            <li><a href="/quality.php">Star Export</a></li>
-            <li><a href="/quality.php">Quality Policy</a></li>
-           </ul>
-         </div>
-          <div class="col-xs-12 col-sm-6 col-md-2 footers-three">
-             <p class="h5">Associate Sites</p>
-             <hr class="bottom-line-left">
-             <ul class="list-unstyled">
-            <li>SurgicalShop.com</li>
-            <li><a href="https://www.orthopaedic-implants.com/" target="_blank">Orthopaedic-Implants.com</a></li>
-           </ul>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                </div>
+            </div>
 
-         </div>
-          <div class="col-xs-12 col-sm-6 col-md-2 footers-four">
-             <p class="h5">Explore</p>
-             <hr class="bottom-line-left">
-             <ul class="list-unstyled">
-             <li><a href="/blog/index.php">Blog</a></li>
-            <li><a href="/news-events/index.php">News &amp; Events</a></li>
-            <li><a href="/testimonials.php">Testimonials</a></li>
-            <li><a href="/videos/index.php">Videos</a></li>
-            <li><a href="/faq.php">FAQ</a></li>
-            <li><a href="/disclaimer.php">Disclaimer</a></li>
-            <li><a href="/copyright.php">Copyright</a></li>
-            <li><a href="/manuals/index.php">Instruction Manuals</a></li>
-            <li><a href="/privacy-policy.php">Privacy Policy</a></li>
-           </ul>
-         </div>
-          <div class="col-xs-12 col-sm-6 col-md-2 footers-five">
-             <p class="h5">Company</p>
-             <hr class="bottom-line-left">
-             <ul class="list-unstyled">
-            <li><a href="/about-us.php">About us</a></li>
-            <li><a href="/our-story.php">Our Story</a></li>
-            <li><a href="/pricing.php">Pricing</a></li>
-            <li><a href="/products.php">Products</a></li>
-            <li><a href="/quality.php">Quality</a></li>
-            <li><a href="/contact.php">Contact Us</a></li>
-            <li><a href="/feedback/index.php">Feedback</a></li>
-           </ul>
-         </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 footers-two offset-md-1">
+                <p class="h5">Products</p>
+                <hr class="bottom-line-left">
+                <ul class="list-unstyled">
+                    @foreach ($productCategories as $productCategory)
+                        <li><a href="{{ route('sub-product.details', $productCategory->slug) }}">{{ $productCategory->title }}</a></li>
+                    @endforeach
+                </ul>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-2 footers-five offset-md-2">
+                <p class="h5">Company</p>
+                <hr class="bottom-line-left">
+                <ul class="list-unstyled">
+                    <li><a href={{ route('abouts') }}>About us</a></li>
+                    <li><a href={{ route('price') }}>Pricing</a></li>
+                    <li><a href={{ route('quality') }}>Quality</a></li>
+                    <li><a href={{ route('feedback') }}>Feedback</a></li>
+                    <li><a href={{ route('address') }}>Address</a></li>
+                    <li><a href={{ route('distributor') }}>Our Distributor</a></li>
+                    <li><a href={{ route('purchase.enquiry') }}>Purchase Enquiry</a></li>
+                </ul>
+            </div>
 
         </div>
 
         <div class="row text-center border-top">
          <div class="col-md-12 pt-3">
-             <p class="text-muted" style="font-size: 13px;"> © Narang Medical Limited. All Rights Reserved</p>
+             <p class="text-muted" style="font-size: 13px;"> © {{ env('APP_NAME') }}. All Rights Reserved</p>
          </div>
         </div>
 
     </div>
 
-     <!-- google review Start-->
-     <div id='hideReview' class="GoogleReviewContainer">
-     <a href="/google-reviews" target="_blank"><img src="{{ asset('public/frontend/images/google-review-image.jpg') }}" alt="Narang Medical Reviews"/></a>
-     </div>
-
-
-
-
-
- <!-- Whatsapp Start-->
- <!-- Whatsapp End-->
 
    <style>
 
- /*
-     .gsc-control-cse {
-     background-color: #387deb !important;
-     border: 0 !important;
-     padding: 6px 8px 6px 10px !important;
-     margin: 0px;
-     border-radius: 2px;
-     overflow: hidden;
- }
- */
  form.gsc-search-box,
  table.gsc-search-box {
      margin-bottom: 0 !important;
@@ -250,23 +202,6 @@
      </style>
 
 </section><!-- End Footer Section -->
-
-    <!--==========================
-    Keywords Section
-    ===========================-->
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-            <div class="col-md-12 footers-tag">
-            <h1 class="footers-tag-text">About Us</h1>
-            <h1 class="footers-tag-text">Suppliers</h1>
-            <h1 class="footers-tag-text">Surgical Instruments</h1>
-            <h1 class="footers-tag-text">Medical Supplies</h1>
-            </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Keywords Section -->
 
 <!--==========================
 Scroll to top

@@ -15,13 +15,13 @@
   Breadcrumb Section
   ============================-->
   <div class="breadcrumb-image" style="background-image: url({{ asset('public/frontend/images/banner/product.jpg') }});">
-    <div class="container text-left">
-        <h1>Quality Certificates</h1>
-        <div class="breadcrumbs_path">
-          <a href="index.php">Home</a>
-          Quality Certificates
+        <div class="container text-left">
+            <h1>Quality Certificates</h1>
+            <div class="breadcrumbs_path">
+            <a href="index.php">Home</a>
+            Quality Certificates
+            </div>
         </div>
-    </div>
     </div>
 
   <!--==========================
