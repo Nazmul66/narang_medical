@@ -1,7 +1,7 @@
 @extends('frontend.layout.template')
 
 @push('meta-title')
-    Medical Equipment | Hospital Supplies | Hospital Medical Supplies | Manufacturer | Suppliers | Surgical Instruments | Narang Medical Limited | India
+        Medico Bangladesh
 @endpush
 
 @push('add-css')

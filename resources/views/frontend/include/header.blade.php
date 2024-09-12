@@ -19,9 +19,6 @@
         <nav class="wsmenu clearfix">
           <ul class="wsmenu-list">
             <li aria-haspopup="true" class="rightmenu" style="background:#FFFFFF;">
-              <div class="gcse-searchbox-only"></div>
-
-
             </li>
             <li aria-haspopup="true"><a href="{{ route('home') }}" class="menuhomeicon"><i class="fas fa-home"></i><span class="hometext">
               HOME</span></a></li>

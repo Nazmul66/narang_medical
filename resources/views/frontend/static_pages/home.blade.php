@@ -2,64 +2,12 @@
 <!doctype html>
 <html lang="en">
 <head>
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZJRGTGT1M1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ZJRGTGT1M1');
-</script>
 
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Medical Equipment | Hospital Supplies | Hospital Medical Supplies | Manufacturer | Suppliers | Surgical Instruments | Narang Medical Limited | India</title>
+<title>Medico Bangladesh</title>
 
-<meta name="description" content="Hospital Supplies - Narang Medical Ltd. is manufacturer &amp; suppliers of Medical Equipment, Hospital Supplies, Hospital Medical Supplies, Surgical Instruments, Hospital Beds, Hospital Furniture, Disposable Medical Products, Sterilizing Equipments and other Hospital Medical Equipment. Based in New Delhi, India, we export Medical Equipment, Surgical Instruments &amp; Hospital Products under NET Brand all over the world." />
-
-<!-- Facebook -->
-<meta property="og:image" content="https://www.narang.com/images/og/home.png"/>
-<meta property="og:image:width" content="600" />
-<meta property="og:image:height" content="315" />
-<meta name="og:title" content="Narang Medical Limited - Medical Equipment, Trauma Implants, Surgical Instruments & Hospital Consumables."/>
-<meta name="og:description" content="Trust NET brand for high quality Hospital Furniture, Medical Disposables, Orthopedic Implants and Hospital Supplies."/>
-<meta name="og:url" content="https://www.narang.com/index.php"/>
-
-<!-- LinkedIn -->
-<meta property="og:image" content="https://www.narang.com/images/og/home.png"/>
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="628" />
-<meta name="title" property="og:title" content="Narang Medical Limited - Medical Equipment, Trauma Implants, Surgical Instruments & Hospital Consumables.">
-<meta name="og:description" content="Trust NET brand for high quality Hospital Furniture, Medical Disposables, Orthopedic Implants and Hospital Supplies."/>
-<meta name="og:url" content="https://www.narang.com/index.php"/>
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:creator" content="@narangmedical"/>
-<meta name="twitter:site" content="@narangmedical">
-<meta name="twitter:image" content="https://www.narang.com/images/og/home.png"/>
-<meta name="twitter:title" content="Narang Medical Limited - Medical Equipment, Trauma Implants, Surgical Instruments & Hospital Consumables."/>
-<meta name="twitter:description" content="Trust NET brand for high quality Hospital Furniture, Medical Disposables, Orthopedic Implants and Hospital Supplies."/>
-<meta name="twitter:url" content="https://www.narang.com/index.php"/>
-
-<!-- Whatsapp -->
-<meta property="og:image" content="https://www.narang.com/images/og/logo-social-media.png"/>
-<meta property="og:image:width" content="200" />
-<meta property="og:image:height" content="200" />
-<meta property="og:type" content="website" />
-
-
-<meta name="keywords" content="Medical Equipment, Hospital Supplies, Hospital Medical Supplies, Manufacturer, Suppliers, India, Hospital Furniture, Surgical Instruments, Disposable Medical Products, Sterilizing Equipments, medical disposables, exporters, Indian, Narang Medical Limited, NET brand, narang.com" />
-<meta name="abstract" content="Manufacturer &amp; suppliers of Medical Equipment, Hospital Supplies, Hospital Medical Supplies, Medical Equipment &amp; Surgical Instruments." />
-<meta name="google-site-verification" content="iAZDAsV49jofh7y-WyozsMHRgHwmlK1eSy3F8zF-Tjw" />
-<link rel="shortcut icon" href="favicon.ico" />
-<meta name="robots" content="index, follow" />
-<meta name="copyright" content="Copyright Narang Medical Ltd. All Rights Reserved" />
-<meta name="revisit-after" content="1 day" />
-<meta name="google-translate-customization" content="43cf66c994edb29d-f84497862517f98d-geb9b5d2d2a248d02-e" />
-<link rel="canonical" href="https://www.narang.com/index.php" />
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ asset('public/frontend/css/custom.css') }}">
@@ -211,7 +159,9 @@ a.h2{
     <!-- Mobile Header -->
     <div class="wsmobileheader clearfix ">
         <a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
-        <span class="smllogo"><img src="{{ asset('public/frontend/images/net-logo-small.png') }}" width="190" height="16"  alt="Trust NET brand for quality Medical Equipment, Hospital Supplies and Surgical Instruments"></span>
+        <span class="smllogo">
+            <img src="{{ asset($basicInfo->logo) }}" width="220"  alt="Trust NET brand for quality Medical Equipment, Hospital Supplies and Surgical Instruments">
+        </span>
 
     </div>
     <!-- Mobile Header -->
@@ -222,16 +172,12 @@ a.h2{
         <div class="wsmainwp clearfix">
 
 
-        <div class="desktoplogo"><a href="/index.php"><img src="{{ asset('public/frontend/images/net-logo-small.png') }}" alt="Narang Medical Ltd. is manufacturer &amp; suppliers of Medical Equipment, Hospital Supplies and Hospital Medical Supplies."></a></div>
+        <div class="desktoplogo">
+            <a href="{{ url('/') }}"> <img src="{{ asset($basicInfo->logo) }}" alt=""></a>
+        </div>
         <!--Main Menu HTML Code-->
         <nav class="wsmenu clearfix">
             <ul class="wsmenu-list">
-            <li aria-haspopup="true" class="rightmenu" style="background:#FFFFFF;">
-            <script async src="https://cse.google.com/cse.js?cx=partner-pub-4125706398982027:iihuzhchvw4"></script>
-                <div class="gcse-searchbox-only"></div>
-
-
-            </li>
             <li aria-haspopup="true"><a href="{{ route('home') }}" class="menuhomeicon"><i class="fas fa-home"></i><span class="hometext">
                     HOME</span></a></li>
             <li><a href="{{ route('abouts') }}" class="menuhomeicon">ABOUT</a></li>
@@ -280,7 +226,6 @@ a.h2{
       <div class="row">
         <div class="col-md-12">
           <p class="section-title">Our Products</p>
-          <p class="section-description">Narang Medical Limited products are ISO 9001 and CE certified and we have been recognized as Star Export House by Government of India.</p>
           <hr class="bottom-line">
         </div>
       </div>
@@ -343,10 +288,10 @@ a.h2{
 
         <div class="col-lg-6 col-sm-12 col-xs-12 about">
           <p>
-            Narang Medical Limited is India's most reputed manufacturer and suppliers of Medical Equipment, Hospital Furniture, Orthopedic Implants and Instruments. Our products are ISO 9001 and CE certified. We are Star Export House company certified by Government of India. From USA to India to Middle East, we are present in over 80 countries!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate veritatis corrupti excepturi dolor ipsum adipisci ipsa laborum, enim, perspiciatis ad voluptates iste, beatae tenetur! Aliquid ipsam explicabo molestias excepturi eos. Neque laborum rem nobis repudiandae dignissimos ducimus ex temporibus. Explicabo sed, commodi praesentium accusamus autem quos beatae. Natus, dicta ab?
           </p>
           <p>
-            We are widely recognized as the "India's best source to import" because we don't compromise on quality in exchange for a cheaper price. Apart from product quality, we are also reputed for prompt delivery, buyers' friendly policies, and the team which includes...
+            We are widely recognized as the "Bangladesh's best source to import" because we don't compromise on quality in exchange for a cheaper price. Apart from product quality, we are also reputed for prompt delivery, buyers' friendly policies, and the team which includes...
           </p>
           <a href="about-us.php" class="btn-narang-outline" style="margin-left: 20px;">Learn More</a>
         </div>
@@ -399,7 +344,7 @@ Footer Section
       <div class="row ">
           <div class="col-md-12">
               <small>
-                 <p>Trust <b>NET brand</b> for high quality <b>Medical Equipment, Hospital Supplies</b> and Surgical Instruments. Narang Medical Limited, India is a leading <b>manufacturer</b> and <b>suppliers</b> of Hospital Furniture, Orthopedic Implants, Medical Disposables and other <b>hospital medical supplies</b>. Narang Medical Limited is India based <b>company</b>.</p>
+                 <p>Trust <b>NET brand</b> for high quality <b>Medical Equipment, Hospital Supplies</b> and Surgical Instruments. Medico Bangladesh, India is a leading <b>manufacturer</b> and <b>suppliers</b> of Hospital Furniture, Orthopedic Implants, Medical Disposables and other <b>hospital medical supplies</b>. Medico Bangladesh is India based <b>company</b>.</p>
              </small>
           </div>
       </div>

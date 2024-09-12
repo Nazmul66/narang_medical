@@ -1,7 +1,7 @@
 @extends('frontend.layout.template')
 
 @push('meta-title')
-    Medical Equipment | Hospital Supplies | Hospital Medical Supplies | Manufacturer | Suppliers | Surgical Instruments | Narang Medical Limited | India
+        Medico Bangladesh
 @endpush
 
 @push('add-css')
@@ -45,7 +45,7 @@ Story Section
 
   <div class="row border-bottom pb-4">
   <div class="col-md-12">
-      <p>Narang Medical Limited is India's most reputed manufacturer & suppliers of Medical Equipment, Surgical Instruments and Hospital Supplies. Our top selling products are Hospital Furniture and Orthopaedic Implants. Started as a small enterprise in early 1950's, the company got incorporated in 1989 and has since continued to expand its horizons to new markets around the world, providing quality products and the best of services. The present average annual growth rate in export sales is impressive 40%.</p>
+      <p>Medico Bangladesh is Bangladesh's most reputed manufacturer & suppliers of Medical Equipment, Surgical Instruments and Hospital Supplies. Our top selling products are Hospital Furniture and Orthopaedic Implants. </p>
   </div>
   </div>
 
@@ -73,7 +73,7 @@ Many importers in Europe sell our products under their brands. This itself is a 
     <div class="col-md-6">
         <div class="abt-box">
         <p class="h5">Company's Philosophy</p>
-        <p>Being in a business that has to take care of health and well-being of people, we ensure that no compromises are made. No doubt, we understand that life is precious. Since the beginning, our business philosophy is based on exceptional service, high quality and value. We pride ourselves on exceeding the expectations of our customers, our employees and our partners. The company believes in long term relationship and mutual growth as objective. At Narang Medical Limited, quality is a culture and service a tradition.</p>
+        <p>Being in a business that has to take care of health and well-being of people, we ensure that no compromises are made. No doubt, we understand that life is precious. Since the beginning, our business philosophy is based on exceptional service, high quality and value. We pride ourselves on exceeding the expectations of our customers, our employees and our partners. The company believes in long term relationship and mutual growth as objective. At Medico Bangladesh, quality is a culture and service a tradition.</p>
         </div>
     </div>
   </div>
@@ -99,7 +99,7 @@ Management Team Section
 
     <div class="col-md-12">
       <p class="section-title h3">Management Team</p>
-      <p class="section-description">The experienced and assertive team, at Narang Medical Limited, is led by management that has a blend of strategic, operational and financial expertise. The management has relevant experience of an average of over 30 years and our leaders share extensive and long-established relationships with associates.</p>
+      <p class="section-description">The experienced and assertive team, at Medico Bangladesh, is led by management that has a blend of strategic, operational and financial expertise. The management has relevant experience of an average of over 30 years and our leaders share extensive and long-established relationships with associates.</p>
       <hr class="bottom-line">
     </div>
   </div>
@@ -108,24 +108,24 @@ Management Team Section
 
     <div class="col-lg-4 col-md-4 col-xs-12">
       <div class="cnt-block equal-hight">
-        <figure><img src="{{ asset('public/frontend/images/rvnarang.jpg') }}" class="img-fluid" alt="Mr. R.V. Narang - Founder of Narang Medical Limited"></figure>
-        <h3>Late Mr. R.V. Narang</h3>
-        <p>founded this organization in 1989 with confidence and determination. He had substantial experience in the Medical devices industry. He was an approachable person, a good human being and a valuable guide for the whole Narang Medical team.</p>
+        <figure><img src="{{ asset('public/frontend/images/rvnarang.jpg') }}" class="img-fluid" alt=""></figure>
+        <h3>Late Mr. R.V.</h3>
+        <p>founded this organization in 1989 with confidence and determination. He had substantial experience in the Medical devices industry. He was an approachable person, a good human being and a valuable guide for the whole Medico Bangladesh team.</p>
       </div>
     </div>
 
     <div class="col-lg-4 col-md-4 col-xs-12">
       <div class="cnt-block equal-hight">
-        <figure><img src="{{ asset('public/frontend/images/parveen.jpg') }}" class="img-fluid" alt="Mr. Parveen Narang - Director of Narang Medical Limited"></figure>
-        <h3>Mr. Parveen Narang</h3>
-        <p>Director of Marketing, is in charge of overall management, strategic planning and policy decisions for various departments including finance and marketing. Additionally, Mr. Parveen Narang is actively involved in troubleshooting and growth of the company through innovative ideas and international representation.</p>
+        <figure><img src="{{ asset('public/frontend/images/parveen.jpg') }}" class="img-fluid" alt=""></figure>
+        <h3>Mr. Parveen </h3>
+        <p>Director of Marketing, is in charge of overall management, strategic planning and policy decisions for various departments including finance and marketing. Additionally, Mr. Parveen is actively involved in troubleshooting and growth of the company through innovative ideas and international representation.</p>
       </div>
     </div>
 
     <div class="col-lg-4 col-md-4 col-xs-12">
       <div class="cnt-block equal-hight">
-        <figure><img src="{{ asset('public/frontend/images/vivek.jpg') }}" class="img-fluid" alt="Mr. Vivek Narang - Narang Medical Limited"></figure>
-        <h3>Mr. Vivek Narang</h3>
+        <figure><img src="{{ asset('public/frontend/images/vivek.jpg') }}" class="img-fluid" alt=""></figure>
+        <h3>Mr. Vivek </h3>
         <p>possesses a dynamic personality, his determined business sense is an asset. With his intellect and knowledge, he is acting as a catalyst in realization of organization's vision, goals and direction. His energy and problem handling ability is noteworthy.</p>
       </div>
     </div>
@@ -221,8 +221,8 @@ Shipping Section
 <div class="row">
 
     <div class="offset-2 col-8">
-      <img src="{{ asset('public/frontend/images/network.png') }}" class="img-fluid" width="100%" alt="Worldwide Distributors Network of Narang Medical Ltd.">
-      <p align="center" class="mt-3"><strong>Worldwide Distributors Network of Narang Medical Ltd.</strong></p>
+      <img src="{{ asset('public/frontend/images/network.png') }}" class="img-fluid" width="100%" alt="Worldwide Distributors Network of Medico Bangladesh">
+      <p align="center" class="mt-3"><strong>Worldwide Distributors Network of Medico Bangladesh</strong></p>
     </div>
 
   </div>

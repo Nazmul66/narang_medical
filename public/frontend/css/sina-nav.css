@@ -98,7 +98,7 @@ Desktop Base CSS
 Desktop Main Menu CSS
 - Desktop Search Bar
 Desktop Drop Down Menu CSS
-Desktop Mega Menus CSS 
+Desktop Mega Menus CSS
 -> Desktop Half Menu CSS
 -> Desktop HTML Form Menu CSS
 Desktop Extra CSS
@@ -175,7 +175,7 @@ video {
 /* ================== Desktop Main Menu CSS ================== */
 /* Top Fixed Effects */
 .wsmainfull.wsfixed {
- 
+
   background-color: #333;
   -webkit-transition:  opacity .3s ease;
   -o-transition:  opacity .3s ease;
@@ -234,42 +234,42 @@ video {
 }
 
 .wsmainfull {
-  width: 100%;
+   width: 100%;
 }
 
 .wsmainwp {
-  margin: 0 auto;
-  max-width: 1190px;
-  position: relative;
+   margin: 0 auto;
+   max-width: 1190px;
+   position: relative;
 }
 
 .desktoplogo {
-  padding: 10px 0px 0px 0px;
-  margin: 0;
+   padding: 10px 0px 0px 0px;
+   margin: 0;
   float: left;
 }
 
 .desktoplogo img {
-  width: 100%
+   width: 160px;
 }
 
 .wsmenu {
-  font-family: Helvetica, sans-serif;
-  color: #fff;
-  font-size: 14px;
+   font-family: Helvetica, sans-serif;
+   color: #fff;
+   font-size: 14px;
 /*  padding-top: 11px;*/
- padding-top: 9px;    
-  width: 71%;
-  float: right;
-  display: block;
+   padding-top: 9px;
+   width: 71%;
+   float: right;
+   display: block;
 }
 
 .wsmenu>.wsmenu-list {
-  text-align: left;
-  margin: 0 auto 0 auto;
-  width: 100%;
-  display: block;
-  padding: 0;
+   text-align: left;
+   margin: 0 auto 0 auto;
+   width: 100%;
+   display: block;
+   padding: 0;
 }
 
 .wsmenu>.wsmenu-list>li {
@@ -666,7 +666,7 @@ video {
 .wsmenu>.wsmenu-list>li>.wsmegamenu .link-list li {
   display: block;
   text-align: center;
- 
+
   text-align: left;
 }
 
@@ -921,7 +921,7 @@ video {
 
 .wsmenu>.wsmenu-list>li:hover>a {
   color: #02c4eb;
-  
+
 }
 
 .wsmenu>.wsmenu-list>li>ul.sub-menu>li:hover>a {
@@ -942,8 +942,8 @@ video {
 
 @media (max-width: 991.98px) { .wsmenu>.wsmenu-list>li:hover>a {
   color:#FFFFFF;
-  
-} }  
+
+} }
 
 
 
@@ -1359,7 +1359,6 @@ video {
     top: 0;
     left: 0;
     z-index: 10002;
-    height: 54px;
     background-color:#FFFFFF;
     text-align: center;
     -webkit-transition: all 0.25s ease-in-out;
@@ -1367,7 +1366,7 @@ video {
     -o-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
-    box-shadow: 0 0 1px rgba(0, 0, 0, .3);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, .3);
   }
 
   .wsactive .wsmobileheader {
@@ -1553,9 +1552,9 @@ video {
     margin-left: 0;
 	margin-top:19px;
   }
-  
+
  @media only screen and (min-width: 250px)  {
- 
+
  .wsactive .wsmenu>.wsmenu-list {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -1565,10 +1564,10 @@ video {
     margin-left: 0;
 	margin-top:19px;
   }
- } 
- 
+ }
+
  @media only screen and (min-width: 250px) and (min-width: 768px)   {
- 
+
  .wsactive .wsmenu>.wsmenu-list {
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -1578,8 +1577,8 @@ video {
     margin-left: 0;
 	margin-top:19px;
   }
- } 
-  
+ }
+
 
   /* ================== Mobile Sub Menu Expander Arrows  ================== */
   .wsmenu>.wsmenu-list>li>.wsmenu-click {
@@ -1695,8 +1694,8 @@ video {
     padding-left: 10px;
     padding-right: 10px;
   }
-  
-  
+
+
 
 
 

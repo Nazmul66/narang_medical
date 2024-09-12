@@ -1,7 +1,7 @@
 @extends('frontend.layout.template')
 
 @push('meta-title')
-    Medical Equipment | Hospital Supplies | Hospital Medical Supplies | Manufacturer | Suppliers | Surgical Instruments | Narang Medical Limited | India
+        Medico Bangladesh
 @endpush
 
 @push('add-css')
@@ -31,14 +31,13 @@ Address Section
 <div class="container">
   <div class="row">
 
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    {{-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
       <div class="box-part text-center">
           <div><img src="{{ asset('public/frontend/images/flag-for-india.png') }}" width="80" height="80" alt=""/></div>
 
         <div><h4>India</h4></div>
         <div class="box-part-text">
           <span><strong>NARANG MEDICAL LIMITED</strong><br>
-
               Narang Tower, 46 Community Centre,<br>
               Naraina Ph-I, New Delhi - 110028 Delhi, India.
           <br><br>
@@ -59,12 +58,10 @@ Address Section
           <div><h4>Factory</h4></div>
         <div class="box-part-text">
           <span>Plot No. D4, Sector A2, Tronica City,<br>
-Loni, Ghaziabad- 201102, India.</span>
+            Loni, Ghaziabad- 201102, India.</span>
         </div>
       </div>
     </div>
-
-
 
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
       <div class="box-part text-center">
@@ -74,15 +71,15 @@ Loni, Ghaziabad- 201102, India.</span>
       <span>
       <strong>NARANG MEDICAL USA CORPORATION</strong><br>
 
-3190 Willow ln, Weston,<br>
-Florida 33331, USA.<br>
-Tel.: +1 (754) 900 3330<br>
-Email: USoffice@narang.com<br>
+        3190 Willow ln, Weston,<br>
+        Florida 33331, USA.<br>
+        Tel.: +1 (754) 900 3330<br>
+        Email: USoffice@narang.com<br>
       </span>
 
         </div>
       </div>
-    </div>
+    </div> --}}
 </div>
 </div>
 
@@ -91,7 +88,7 @@ Email: USoffice@narang.com<br>
 <!--==========================
 Form Section
 ============================-->
-<section class="pt-80">
+{{-- <section class="pt-80">
   <div class="container">
       <div class="row">
            <div class="col-md-6">
@@ -106,25 +103,25 @@ Form Section
            </div>
       </div>
  </div>
-</section>
+</section> --}}
 <!-- End Form Section -->
 
 <!--==========================
 Form Section
 ============================-->
 <section class="pt-80">
-  <div class="container">
+  {{-- <div class="container">
 
       <div class="row">
-       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<h4>Narang INDIA - Follow these steps to reach us very easily</h4>
-<p>
-1. Open Google Maps on your smart phone<br>
-2. Copy these numbers only 28.632068,77.137895 and paste in the search box. These numbers are our geolocation. Hit Search button.<br>
-3. Follow the driving directions. You will precisely reach at our door step without asking anyone.<br>
-4. You're Welcome :)
-</p>
-       </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h4>Narang INDIA - Follow these steps to reach us very easily</h4>
+            <p>
+                1. Open Google Maps on your smart phone<br>
+                2. Copy these numbers only 28.632068,77.137895 and paste in the search box. These numbers are our geolocation. Hit Search button.<br>
+                3. Follow the driving directions. You will precisely reach at our door step without asking anyone.<br>
+                4. You're Welcome :)
+            </p>
+        </div>
       </div>
 
       <div class="row pt-40">
@@ -133,28 +130,21 @@ Form Section
         </div>
        </div>
 
- </div>
+ </div> --}}
 
-  <br>
-<br>
+    <br>
+    <br>
 
   <div class="container">
 
       <div class="row">
        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<h4>Narang USA - Follow these steps to reach us very easily</h4>
-<!--<p>
-1. Open Google Maps on your smart phone<br>
-2. Copy these numbers only 28.632068,77.137895 and paste in the search box. These numbers are our geolocation. Hit Search button.<br>
-3. Follow the driving directions. You will precisely reach at our door step without asking anyone.<br>
-4. You're Welcome :)
-</p> -->
+        <h4>Medico Bangladesh - Follow these steps to reach us very easily</h4>
        </div>
       </div>
 
       <div class="row pt-40">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <!-- old map	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.901066833367!2d-80.36391738497275!3d26.06948948349792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2fe147e45bdb2306!2sNarang%20Medical%20USA%20Corporation!5e0!3m2!1sen!2sin!4v1603364316587!5m2!1sen!2sin" width="100%" height="480" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
 
        <iframe width="100%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=480&amp;hl=en&amp;q=3190%20Willow%20ln,%20Weston,%20Florida%2033331,%20USA.%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
 

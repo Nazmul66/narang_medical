@@ -1,7 +1,7 @@
 @extends('frontend.layout.template')
 
 @push('meta-title')
-    Medical Equipment | Hospital Supplies | Hospital Medical Supplies | Manufacturer | Suppliers | Surgical Instruments | Narang Medical Limited | India
+        Medico Bangladesh
 @endpush
 
 @push('add-css')
@@ -33,7 +33,7 @@
     	<div class="row">
         <div class="col-md-12">
           <h3 class="section-title">Our Products</h3>
-          <p class="section-description">Narang Medical Limited is a manufacturer and suppliers of a wide range of high quality medical, surgical and hospital products. Our products are ISO 9001 and CE certified and we have been recognized as Star Export House by Government of India. We supply our products in more than 80 countries worldwide. Here is our product list:</p>
+          <p class="section-description">Medico Bangladesh is a manufacturer and suppliers of a wide range of high quality medical, surgical and hospital products. Our products are ISO 9001 and CE certified and we have been recognized as Star Export House by Government of India. We supply our products in more than 80 countries worldwide. Here is our product list:</p>
           <hr class="bottom-line">
         </div>
       </div>

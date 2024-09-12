@@ -1,7 +1,7 @@
 @extends('frontend.layout.template')
 
 @push('meta-title')
-    Medical Equipment | Hospital Supplies | Hospital Medical Supplies | Manufacturer | Suppliers | Surgical Instruments | Narang Medical Limited | India
+        Medico Bangladesh
 @endpush
 
 @push('add-css')
@@ -43,7 +43,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
                         <div class="tile">
                             <div class="banner-img">
-                                <img src="{{ $row->image }}" alt="Africa Health Exhibition 2024 Narang Medical Exhibitions">
+                                <img src="{{ $row->image }}" alt="">
                             </div>
 
                             <div class="tile-box">
